@@ -41,9 +41,6 @@ namespace Canteen_Automation_System.Controllers
         {
             return View();
         }
-        public ActionResult Logout()
-        {
-            return View();
-        }
+        
     }
 }

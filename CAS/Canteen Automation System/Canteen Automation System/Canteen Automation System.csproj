@@ -279,7 +279,6 @@
     <Content Include="Views\Admin\ManageFoodItems.cshtml" />
     <Content Include="Views\Admin\ManageFoodCategories.cshtml" />
     <Content Include="Views\Admin\OrdersReport.cshtml" />
-    <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Shared\_Admin.cshtml" />
     <Content Include="Views\Admin\Reviews.cshtml" />
     <Content Include="Views\Admin\AddFoodItems.cshtml" />
