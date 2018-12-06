@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "DetailsOrder";
+    Layout = "~/Views/Shared/_AdminLayoutPage.cshtml";
+}
+
+<style>
+    .table {
+        padding: 40px;
+    }
+
+    .writings {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+</style>
+
+
+<div style="height:60px"></div>
+
+<div style="padding-left:40px; padding-right:40px">
+    <table class="table table-bordered table-responsive table-hover">
+        <tr class="table">
+            <th>OrderId</th>
+            <th>ProductId </th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+
+        </tr>
+        @foreach (OrderProduct f in ViewBag.listProduct)
+        {
+
+            <tr>
+                <td>@f.OrderId</td>
+                <td>@f.ProductId</td>
+                <td>@f.ProductName</td>
+                <td>@f.Price</td>
+                <td>@f.Quantity</td>
+            </tr>
+        }
+
+
+    </table>
+</div>
+<div style="height:60px"></div>
+
+<button type="button" class="btn btn-light" onclick="window.location='/Admin/OrdersReport'">BACK</button>
+
+
